@@ -1,0 +1,9 @@
+<h4>Team List</h4>
+
+<ul *ngFor="let team of teams">
+  <li>{{team.name}} <button (click)="get(team.name)">get team info</button></li>
+</ul>
+
+<br>
+Info about team:
+<div>{{team}}</div>

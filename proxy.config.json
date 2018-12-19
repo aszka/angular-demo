@@ -1,0 +1,11 @@
+{
+  "/rest-api/*": {
+    "target": "http://localhost:8080/rest-demo",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/rest-api": ""
+    }
+  }
+}
