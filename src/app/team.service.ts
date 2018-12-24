@@ -11,10 +11,10 @@ export class TeamService {
   }
 
   getAll(): Observable<any> {
-    return this.http.get('/rest-api/teams/');
+    return this.http.get('http://localhost:8080/rest-demo/teams/');
   }
 
   get(teamName) {
-    return this.http.get('/rest-api/teams/' + teamName);
+    return this.http.get('http://localhost:8080/rest-demo/teams/' + teamName);
   }
 }
